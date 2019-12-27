@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 @app.route('/')
-def forward_request():
+def forward_request(self):
     return repr(self.environ)
 
 if __name__ == '__main__':
