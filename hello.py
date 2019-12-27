@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def forward_request():
     #test
-    json.dumps(dict(request.headers))
+    return json.dumps(dict(request.headers))
 
 if __name__ == '__main__':
     app.run()
