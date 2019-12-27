@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def forward_request():
-    #test
-    return request.stream.read()
+    request.get_data()
+    return request.data
 
 if __name__ == '__main__':
     app.run()
